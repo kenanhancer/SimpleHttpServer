@@ -69,9 +69,17 @@ namespace HttpServerApp
                 Console.WriteLine("=============================");
 
                 //Start default web browser
-                //Helper.OpenBrowser($"http://{ip}:{portNumber}");
-                //Helper.OpenBrowser($"http://{ip}:{portNumber}/hello");
+                Helper.OpenBrowser($"http://{ip}:{portNumber}");
+                Helper.OpenBrowser($"http://{ip}:{portNumber}/hello");
                 Helper.OpenBrowser($"http://{ip}:{portNumber}/account/Kenan/33");
+
+                string faviconPath = Path.Combine(httpServer.SourceDirectory, "favicon.png");
+
+                MemoryStream favicon = new MemoryStream();
+
+                if (File.Exists(faviconPath))
+                    using (FileStream fileStream = File.OpenRead(faviconPath))
+                        await fileStream.CopyToAsync(favicon);
 
                 await httpServer.RequestReceivedAsync(async httpRequest =>
                 {
@@ -87,49 +95,35 @@ namespace HttpServerApp
                         paramArray = parameters.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                     }
 
-                    if (httpRequest.Method == "GET")
+                    if (queryParams == "/" || Path.HasExtension(queryParams))
                     {
-                        if (queryParams == "/" || Path.HasExtension(queryParams))
+                        string fileName = httpRequest.QueryParameters.Substring(1);
+
+                        if (String.IsNullOrEmpty(fileName))
+                            fileName = "iisstart.htm";
+
+                        if (fileName == "favicon.ico")
                         {
-                            string fileName = httpRequest.QueryParameters.Substring(1);
-
-                            if (String.IsNullOrEmpty(fileName))
-                                fileName = "iisstart.htm";
-
-                            string filePath = Path.Combine(httpServer.SourceDirectory, fileName);
-
-                            await HttpUtility.UploadFile(filePath, httpRequest);
-
-                            httpRequest.Handled = true;
+                            await HttpUtility.UploadStream(favicon, httpRequest);
                         }
                         else
                         {
-                            RouteInfo routeInfo;
-                            if (getRoutes.TryGetValue(actionName, out routeInfo))
-                            {
-                                object[] actionParameters;
-                                if (routeInfo.ControllerInstance == null)
-                                {
-                                    actionParameters = new object[paramArray.Length + 1];
-                                    actionParameters[0] = httpRequest;
-                                    paramArray.CopyTo(actionParameters, 1);
-                                }
-                                else
-                                {
-                                    actionParameters = new object[paramArray.Length + 2];
-                                    actionParameters[0] = routeInfo.ControllerInstance;
-                                    actionParameters[1] = httpRequest;
-                                    paramArray.CopyTo(actionParameters, 2);
-                                }
+                            string filePath = Path.Combine(httpServer.SourceDirectory, fileName);
 
-                                object result = routeInfo.ActionInvoker(actionParameters);
-                            }
+                            await HttpUtility.UploadFile(filePath, httpRequest);
                         }
+
+                        httpRequest.Handled = true;
                     }
-                    else if (httpRequest.Method == "POST")
+                    else
                     {
+                        Dictionary<string, RouteInfo> routeDict = getRoutes;
+
+                        if (httpRequest.Method == "POST")
+                            routeDict = postRoutes;
+
                         RouteInfo routeInfo;
-                        if (postRoutes.TryGetValue(actionName, out routeInfo))
+                        if (routeDict.TryGetValue(actionName, out routeInfo))
                         {
                             object[] actionParameters;
                             if (routeInfo.ControllerInstance == null)

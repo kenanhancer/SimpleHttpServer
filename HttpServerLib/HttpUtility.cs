@@ -53,6 +53,23 @@ namespace HttpServerLib
                 }
         }
 
+        public static async Task UploadStream(Stream stream, HttpRequestEntity httpRequest)
+        {
+            httpRequest.Response.ContentLength = stream.Length;
+
+            byte[] headerBuffer = BuildHttpResponse(httpRequest);
+
+            await httpRequest.Response.ResponseStream.WriteAsync(headerBuffer, 0, headerBuffer.Length);
+
+            int bytesRead;
+            byte[] responseBuffer = new byte[8192];
+
+            while ((bytesRead = await stream.ReadAsync(responseBuffer, 0, responseBuffer.Length)) != 0)
+            {
+                await httpRequest.Response.ResponseStream.WriteAsync(responseBuffer, 0, bytesRead);
+            }
+        }
+
         public static async Task<HttpRequestEntity> ParseHttpRequest(NetworkStream networkStream, TcpClient tcpClient)
         {
             HttpRequestEntity requestMessage = null;
