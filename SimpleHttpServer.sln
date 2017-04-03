@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpServerApp", "HttpServerApp\HttpServerApp.xproj", "{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpClientApp", "HttpClientApp\HttpClientApp.xproj", "{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpServerLib", "HttpServerLib\HttpServerLib.xproj", "{2AC95686-FB92-464C-9F52-DE6AE57B1E59}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpUnitTest", "HttpUnitTest\HttpUnitTest.xproj", "{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC95686-FB92-464C-9F52-DE6AE57B1E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC95686-FB92-464C-9F52-DE6AE57B1E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC95686-FB92-464C-9F52-DE6AE57B1E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC95686-FB92-464C-9F52-DE6AE57B1E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kenanhancer.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HttpServerApp\\HttpServerApp.xproj
+		SccProjectName1 = HttpServerApp
+		SccLocalPath1 = HttpServerApp
+		SccProjectUniqueName2 = HttpClientApp\\HttpClientApp.xproj
+		SccProjectName2 = HttpClientApp
+		SccLocalPath2 = HttpClientApp
+		SccProjectUniqueName3 = HttpServerLib\\HttpServerLib.xproj
+		SccProjectName3 = HttpServerLib
+		SccLocalPath3 = HttpServerLib
+		SccProjectUniqueName4 = HttpUnitTest\\HttpUnitTest.xproj
+		SccProjectName4 = HttpUnitTest
+		SccLocalPath4 = HttpUnitTest
+	EndGlobalSection
+EndGlobal
