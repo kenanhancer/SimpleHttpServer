@@ -57,10 +57,10 @@ namespace HttpServerApp
                 Helper.OpenBrowser($"http://{httpServer.Ip}:{httpServer.PortNumber}/account/Kenan/33");
 
 
-                <b style="font-size:36px;color:red;">await httpServer.RequestReceivedAsync(async httpRequest =>
+                <b>await httpServer.RequestReceivedAsync(async httpRequest =>
                 {</b>
                     await Console.Out.WriteLineAsync(httpRequest.ToString());
-                <b style="font-size:36px;color:red;">});</b>
+                <b>});</b>
             }
         }
 
