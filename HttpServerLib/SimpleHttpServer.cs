@@ -25,6 +25,7 @@ namespace HttpServerLib
 
         protected TcpListener tcpListener;
         int receivedRequestCount = 0;
+        MemoryStream favicon;
 
         #endregion Properties
 
@@ -61,6 +62,14 @@ namespace HttpServerLib
             if (!int.TryParse(portNumber, out port) || port < 1024 || port > IPEndPoint.MaxPort)
                 throw new ArgumentOutOfRangeException("port");
 
+            string faviconPath = Path.Combine(SourceDirectory, "favicon.png");
+
+            favicon = new MemoryStream();
+
+            if (File.Exists(faviconPath))
+                using (FileStream fileStream = File.OpenRead(faviconPath))
+                    fileStream.CopyTo(favicon);
+
             tcpListener = new TcpListener(ipAddress, port);
 
             tcpListener.Start(BacklogClientCount);
@@ -87,6 +96,72 @@ namespace HttpServerLib
                                 HttpRequestEntity httpRequest = await HttpUtility.ParseHttpRequest(networkStream, acceptedTcpClient);
 
                                 if (httpRequest == null) continue;
+
+                                #region Controller
+
+                                string queryParams = httpRequest.QueryParameters.ToLowerInvariant();
+                                int parameterStartIndex = queryParams.IndexOf('/', 1);
+                                string actionName = queryParams;
+                                string[] paramArray = new string[0];
+
+                                if (parameterStartIndex > -1)
+                                {
+                                    actionName = queryParams.Substring(0, parameterStartIndex);
+                                    string parameters = queryParams.Substring(parameterStartIndex);
+                                    paramArray = parameters.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+                                }
+
+
+                                if (queryParams == "/" || Path.HasExtension(queryParams))
+                                {
+                                    string fileName = httpRequest.QueryParameters.Substring(1);
+
+                                    if (String.IsNullOrEmpty(fileName))
+                                        fileName = "iisstart.htm";
+
+                                    if (fileName == "favicon.ico")
+                                    {
+                                        await HttpUtility.UploadStream(favicon, httpRequest);
+                                    }
+                                    else
+                                    {
+                                        string filePath = Path.Combine(SourceDirectory, fileName);
+
+                                        await HttpUtility.UploadFile(filePath, httpRequest);
+                                    }
+
+                                    httpRequest.Handled = true;
+                                }
+                                else
+                                {
+                                    Dictionary<string, RouteInfo> routeDict = GetRoutes;
+
+                                    if (httpRequest.Method == "POST")
+                                        routeDict = PostRoutes;
+
+                                    RouteInfo routeInfo;
+                                    if (routeDict.TryGetValue(actionName, out routeInfo))
+                                    {
+                                        object[] actionParameters;
+                                        if (routeInfo.ControllerInstance == null)
+                                        {
+                                            actionParameters = new object[paramArray.Length + 1];
+                                            actionParameters[0] = httpRequest;
+                                            paramArray.CopyTo(actionParameters, 1);
+                                        }
+                                        else
+                                        {
+                                            actionParameters = new object[paramArray.Length + 2];
+                                            actionParameters[0] = routeInfo.ControllerInstance;
+                                            actionParameters[1] = httpRequest;
+                                            paramArray.CopyTo(actionParameters, 2);
+                                        }
+
+                                        object result = routeInfo.ActionInvoker(actionParameters);
+                                    }
+                                }
+
+                                #endregion Controller
 
                                 if (callback != null)
                                     await callback(httpRequest);
