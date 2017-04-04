@@ -4,7 +4,7 @@ Simple Http Server is a simple, flexible and fast web server application. If you
 
 ![1](https://cloud.githubusercontent.com/assets/1851856/24612532/34613ac8-188e-11e7-9baa-d62ac70a1408.PNG)
 
-## Http Server Application
+## Http Server Console-base Application
 
 It is very easy to use. Notice that to serve static files, source directory should be set. In addition, it can serve GET and POST operations by defining routes. I developed a console-based application for simplicity as shown in below.
 
@@ -64,19 +64,50 @@ namespace HttpServerApp
             }
         }
 
-        public static object Hello(HttpRequestEntity request)
+        public static object <b>Hello</b>(HttpRequestEntity request)
         {
             request.Response.Content = "Hello World!";
 
             return null;
         }
 
-        public static void Account(HttpRequestEntity request, string name, int age)
+        public static void <b>Account</b>(HttpRequestEntity request, string name, int age)
         {
             request.Response.Content = $"Welcome {name}! Your Age is {age}";
         }
 
-        public static object Post(HttpRequestEntity request)
+        public static object <b>Post</b>(HttpRequestEntity request)
+        {
+            request.Response.Content = "OK";
+
+            return null;
+        }
+    }
+}
+</pre>
+
+Let's look at controller class. It is very simple.
+
+<pre>
+using HttpServerLib;
+
+namespace HttpServerApp
+{
+    public class TestController
+    {
+        public object Hello(HttpRequestEntity request)
+        {
+            request.Response.Content = "Hello World!";
+
+            return null;
+        }
+
+        public void Account(HttpRequestEntity request, string name, int age)
+        {
+            request.Response.Content = $"Welcome {name}! Your Age is {age}";
+        }
+
+        public object Post(HttpRequestEntity request)
         {
             request.Response.Content = "OK";
 
