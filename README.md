@@ -4,11 +4,11 @@ Simple Http Server is a simple, flexible and fast web server application. If you
 
 ![1](https://cloud.githubusercontent.com/assets/1851856/24612532/34613ac8-188e-11e7-9baa-d62ac70a1408.PNG)
 
-##Http Server Application
+## Http Server Application
 
 It is very easy to use. Notice that to serve static files, source directory should be set. In addition, it can serve GET and POST operations by defining routes. I developed a console-based application for simplicity as shown in below.
 
-<code>
+<pre>
 using HttpServerLib;
 using System;
 using System.Collections.Generic;
@@ -84,4 +84,4 @@ namespace HttpServerApp
         }
     }
 }
-</code>
+</pre>
