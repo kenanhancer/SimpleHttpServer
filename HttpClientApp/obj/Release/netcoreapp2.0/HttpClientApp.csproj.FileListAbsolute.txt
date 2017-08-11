@@ -1,0 +1,10 @@
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\bin\Release\netcoreapp2.0\HttpClientApp.deps.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\bin\Release\netcoreapp2.0\HttpClientApp.runtimeconfig.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\bin\Release\netcoreapp2.0\HttpClientApp.runtimeconfig.dev.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\bin\Release\netcoreapp2.0\HttpClientApp.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\bin\Release\netcoreapp2.0\HttpClientApp.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\obj\Release\netcoreapp2.0\HttpClientApp.csproj.CoreCompileInputs.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\obj\Release\netcoreapp2.0\HttpClientApp.AssemblyInfo.cs
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\obj\Release\netcoreapp2.0\HttpClientApp.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\obj\Release\netcoreapp2.0\HttpClientApp.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpClientApp\obj\Release\netcoreapp2.0\HttpClientApp.AssemblyInfoInputs.cache

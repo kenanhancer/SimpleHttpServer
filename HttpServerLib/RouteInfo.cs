@@ -5,7 +5,29 @@ namespace HttpServerLib
 {
     public class RouteInfo
     {
+        private string controller;
+        private string action;
+        private string area;
         private Type controllerType;
+        private object controllerInstance;
+
+        public string Controller
+        {
+            get { return controller; }
+            set { controller = value; }
+        }
+
+        public string Action
+        {
+            get { return action; }
+            set { action = value; UpdateDelegate(); }
+        }
+
+        public string Area
+        {
+            get { return area; }
+            set { area = value; UpdateDelegate(); }
+        }
 
         public Type ControllerType
         {
@@ -13,21 +35,10 @@ namespace HttpServerLib
             set { controllerType = value; UpdateDelegate(); }
         }
 
-        private object controllerInstance;
-
         public object ControllerInstance
         {
             get { return controllerInstance; }
             set { controllerInstance = value; ControllerType = controllerInstance.GetType(); }
-        }
-
-
-        private string actionName;
-
-        public string ActionName
-        {
-            get { return actionName; }
-            set { actionName = value; UpdateDelegate(); }
         }
 
         public string BaseRoot { get; set; }
@@ -42,9 +53,14 @@ namespace HttpServerLib
 
         void UpdateDelegate()
         {
-            if(ControllerType!=null && !String.IsNullOrEmpty(ActionName))
+            if (!String.IsNullOrEmpty(Controller))
             {
-                actionMethodInfo = ControllerType.GetMethod(ActionName);
+                //var a1 = AppDomain.CurrentDomain.GetReferencingAssemblies("TestController");
+            }
+
+            if (ControllerType != null && !String.IsNullOrEmpty(Action))
+            {
+                actionMethodInfo = ControllerType.GetMethod(Action);
                 actionInvoker = Helper.CreateMethodInvokerDelegate(actionMethodInfo);
             }
         }

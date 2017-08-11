@@ -114,6 +114,13 @@ namespace HttpServerLib
 
                                 if (queryParams == "/" || Path.HasExtension(queryParams))
                                 {
+                                    //string fileExtension = Path.GetExtension(queryParams);
+
+                                    //if (!HttpUtility.MimeTypeDict.ContainsKey(fileExtension))
+                                    //{
+
+                                    //}
+
                                     string fileName = httpRequest.QueryParameters.Substring(1);
 
                                     if (String.IsNullOrEmpty(fileName))

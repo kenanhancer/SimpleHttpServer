@@ -1,0 +1,8 @@
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Release\netstandard2.0\HttpServerLib.deps.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Release\netstandard2.0\HttpServerLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Release\netstandard2.0\HttpServerLib.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Release\netstandard2.0\HttpServerLib.csproj.CoreCompileInputs.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Release\netstandard2.0\HttpServerLib.AssemblyInfo.cs
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Release\netstandard2.0\HttpServerLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Release\netstandard2.0\HttpServerLib.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Release\netstandard2.0\HttpServerLib.AssemblyInfoInputs.cache

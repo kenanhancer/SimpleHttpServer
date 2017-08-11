@@ -1,0 +1,9 @@
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Debug\netstandard1.6\HttpServerLib.deps.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Debug\netstandard1.6\HttpServerLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Debug\netstandard1.6\HttpServerLib.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Debug\netstandard1.6\CoreLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\bin\Debug\netstandard1.6\CoreLib.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Debug\netstandard1.6\HttpServerLib.csprojResolveAssemblyReference.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Debug\netstandard1.6\HttpServerLib.AssemblyInfo.cs
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Debug\netstandard1.6\HttpServerLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerLib\obj\Debug\netstandard1.6\HttpServerLib.pdb

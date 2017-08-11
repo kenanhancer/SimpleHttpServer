@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpServerApp", "HttpServerApp\HttpServerApp.xproj", "{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpServerApp", "HttpServerApp\HttpServerApp.csproj", "{1DB54CBF-85C1-4DA9-BDFC-E11D63198CBE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpClientApp", "HttpClientApp\HttpClientApp.xproj", "{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientApp", "HttpClientApp\HttpClientApp.csproj", "{082F6D7A-F1ED-4706-B3FD-B8D3BD06BCC5}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpServerLib", "HttpServerLib\HttpServerLib.xproj", "{2AC95686-FB92-464C-9F52-DE6AE57B1E59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpServerLib", "HttpServerLib\HttpServerLib.csproj", "{2AC95686-FB92-464C-9F52-DE6AE57B1E59}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpUnitTest", "HttpUnitTest\HttpUnitTest.xproj", "{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpUnitTest", "HttpUnitTest\HttpUnitTest.csproj", "{407A4FD0-63CB-4986-B2BB-76BE8DD64E8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,22 +37,25 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDD952F0-6006-4867-9A47-F6FA6F6BEB44}
+	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 5
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://kenanhancer.visualstudio.com/
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = HttpServerApp\\HttpServerApp.xproj
-		SccProjectName1 = HttpServerApp
-		SccLocalPath1 = HttpServerApp
-		SccProjectUniqueName2 = HttpClientApp\\HttpClientApp.xproj
-		SccProjectName2 = HttpClientApp
-		SccLocalPath2 = HttpClientApp
-		SccProjectUniqueName3 = HttpServerLib\\HttpServerLib.xproj
-		SccProjectName3 = HttpServerLib
-		SccLocalPath3 = HttpServerLib
-		SccProjectUniqueName4 = HttpUnitTest\\HttpUnitTest.xproj
-		SccProjectName4 = HttpUnitTest
-		SccLocalPath4 = HttpUnitTest
+		SccProjectUniqueName1 = HttpServerApp\\HttpServerApp.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = HttpServerApp\\
+		SccProjectUniqueName2 = HttpClientApp\\HttpClientApp.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = HttpClientApp\\
+		SccProjectUniqueName3 = HttpServerLib\\HttpServerLib.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = HttpServerLib\\
+		SccProjectUniqueName4 = HttpUnitTest\\HttpUnitTest.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = HttpUnitTest\\
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\HttpUnitTest.deps.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\HttpUnitTest.runtimeconfig.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\HttpUnitTest.runtimeconfig.dev.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\HttpUnitTest.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\bin\Debug\netcoreapp1.1\HttpUnitTest.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\obj\Debug\netcoreapp1.1\HttpUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\obj\Debug\netcoreapp1.1\HttpUnitTest.AssemblyInfo.cs
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\obj\Debug\netcoreapp1.1\HttpUnitTest.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpUnitTest\obj\Debug\netcoreapp1.1\HttpUnitTest.pdb

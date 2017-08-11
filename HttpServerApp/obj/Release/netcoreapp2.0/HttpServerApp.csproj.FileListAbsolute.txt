@@ -1,0 +1,13 @@
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerApp.deps.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerApp.runtimeconfig.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerApp.runtimeconfig.dev.json
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerApp.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerApp.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerLib.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\bin\Release\netcoreapp2.0\HttpServerLib.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.csprojResolveAssemblyReference.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.csproj.CoreCompileInputs.cache
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.AssemblyInfo.cs
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.dll
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.pdb
+C:\Users\dtkhancer\Documents\KenanUni\CSharp_Projects\SimpleHttpServer\HttpServerApp\obj\Release\netcoreapp2.0\HttpServerApp.AssemblyInfoInputs.cache
